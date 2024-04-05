@@ -1,0 +1,73 @@
+.second-content{
+    background-color: #D9FFDA;
+    margin-top: -15rem;
+    position: relative;
+    z-index: 10;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+}
+.trust-container{
+    font-family: 'Poppins', sans-serif;
+    color: #005C30;
+    font-weight: 700;
+    text-align: center;
+}
+.companies-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+@media (max-width:9000px) {
+    .second-content{
+        margin-top: -12rem;
+        height: 12rem;
+    }
+    .companies-container a img{
+        width: 6.5rem;
+    }
+}
+@media (max-width:650px) {
+    .second-content{
+        margin-top: -10rem;
+        height: 10rem;
+    }
+    .companies-container a img{
+        width: 4.5rem;
+    }
+}
+@media (max-width:490px) {
+    .second-content{
+        row-gap: 0.5rem;
+        margin-top: -8rem;
+        height: 8rem;
+    }
+    .trust-container{
+        font-size: 12px;
+    }
+    .companies-container a img{
+        width: 3.5rem;
+    }
+}
+@media (max-width:360px) {
+    .second-content{
+        row-gap: 0.5rem;
+        margin-top: -4rem;
+        height: 4rem;
+    }
+    .trust-container{
+        font-size: 10px;
+    }
+    .companies-container{
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+        place-content: center;
+    }
+    .companies-container a img{
+        width: 2.5rem;
+    }
+}

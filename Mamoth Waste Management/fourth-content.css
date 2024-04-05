@@ -1,0 +1,132 @@
+.fourth-content{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    width: 90%;
+    margin-top: 5rem;
+}
+.customers{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.customer{
+    color: #43A047;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.stories{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: italic;
+}
+.fourth-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.cards{
+    border-top: 10px solid #43A047;
+    box-shadow: 0 0 35px rgb(220, 220, 220);
+    position: relative;
+    height: 19rem;
+    row-gap: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-pic{
+    width: 4rem;
+    object-fit: cover;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+.management{
+    font-size: 18px;
+    width: 18rem;
+}
+
+@media (max-width:1090px) {
+    .fourth-content{
+        margin-top: 4rem;
+    }
+    .customers{
+        margin-bottom: 2.5rem;
+    }
+    .customer{
+        font-size: 2.2rem;
+    }
+    .cards{
+        height: 17rem;
+    }
+    .management{
+        font-size: 15px;
+        width: 15rem;
+    }
+    .profile-details{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:940px) {
+    .fourth-content{
+        margin-top: 2.5rem;
+    }
+    .customers{
+        margin-bottom: 1.5rem;
+    }
+    .customer{
+        font-size: 1.5rem;
+    }
+    .cards{
+        height: 13rem;
+        padding: 0.5rem;
+    }
+    .profile-pic{
+        width: 3rem;
+    }
+    .management{
+        font-size: 12px;
+        width: 12rem;
+    }
+    .profile-details{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:750px) {
+    .fourth-content{
+        margin-top: 1rem;
+    }
+    .customers{
+        margin-bottom: 1rem;
+    }
+    .customer{
+        font-size: 1rem;
+    }
+    .cards{
+        height: 14rem;
+        row-gap: 1rem;
+        border-radius: 6px;
+    }
+    .profile-pic{
+        width: 2rem;
+        top: -20px;
+    }
+    .management{
+        font-size: 12px;
+        width: 9rem;
+    }
+    .profile-details{
+        font-size: 9px;
+    }
+}
+
+@media (max-width:580px) {
+    .fourth-cards{
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        column-gap: 2rem;
+        justify-content: center;
+    }
+}

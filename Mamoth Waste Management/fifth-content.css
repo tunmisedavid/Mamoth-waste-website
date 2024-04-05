@@ -1,0 +1,181 @@
+.fifth-content{
+    font-family: 'Poppins', sans-serif;
+    background-color: #50A47B;
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+    height: 28rem;
+    width: 85%;
+    margin: auto;
+    margin-top: 8rem;
+}
+.location-details{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.mini-loca{
+    position: absolute;
+    top: 6rem;
+    left: 7rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    z-index: 1;
+}
+.waste-dis{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+.made-e{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: italic;
+}
+.barrier{
+    font-size: 20px;
+}
+.Contact-us-btn{
+    background-color: white;
+    color: #0C513F;
+    border: none;
+    width: 9rem;
+    height: 2rem;
+    border-radius: 6px;
+}
+.mamoth-des{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 24rem;
+}
+.search-maps{
+    width: 18rem;
+    position: absolute;
+    bottom: 0;
+    right: 10rem;
+}
+@media screen and (max-width:1150px) {
+    .fifth-content{
+        height: 24rem;
+        margin-top: 5rem;
+    }
+    .mini-loca{
+        top: 5rem;
+    }
+    .waste-dis{
+        font-size: 2rem;
+    }
+    .barrier{
+        font-size: 17px;
+    }
+    .mamoth-des{
+        width: 20rem;
+    }
+    .search-maps{
+        width: 15rem;
+        right: 8rem;
+    }
+}
+
+@media (max-width:950px) {
+    .fifth-content{
+        height: 20rem;
+        margin-top: 3rem;
+        border-radius: 10px;
+    }
+    .mini-loca{
+        top: 5rem;
+        left: 4rem;
+        row-gap: 0.5rem;
+    }
+    .waste-dis{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .barrier{
+        font-size: 14px; 
+    }
+    .Contact-us-btn{
+        font-size: 12px;
+        width: 7rem;
+        height: 1.7rem;
+        border-radius: 4px;
+    }
+    .mamoth-des{
+        width: 17rem;
+    }
+    .search-maps{
+        width: 12rem;
+        right: 5rem;
+    }
+}
+
+@media (max-width:750px) {
+    .fifth-content{
+        height: 16rem;
+        margin-top: 1.5rem;
+    }
+    .mini-loca{
+        left: 2.5rem;
+        row-gap: 10px;
+    }
+    .waste-dis{
+        font-size: 16px;
+        line-height: 1.3rem;
+    }
+    .barrier{
+        font-size: 11px;
+    }
+    .Contact-us-btn{
+        font-size: 10px;
+        width: 5.2rem;
+        height: 1.3rem;
+    }
+    .mamoth-des{
+        width: 13rem;
+    }
+    .search-maps{
+        width: 9rem;
+        right: 3rem;
+    }
+}
+@media (max-width:500px) {
+    .fifth-content{
+        height: 10rem;
+        margin-top: 1rem;
+    }
+    .mini-loca{
+        left: 2rem;
+        top: 3rem;
+        row-gap: 6px;
+    }
+    .waste-dis{
+        font-size: 12px;
+        line-height: 1rem;
+    }
+    .barrier{
+        font-size: 8px;
+    }
+    .Contact-us-btn{
+        font-size: 8px;
+        width: 4.2rem;
+        height: 1rem;
+        border-radius: 2px;
+    }
+    .mamoth-des{
+        width: 9rem;
+    }
+    .search-maps{
+        width: 5.2rem;
+    }
+}
+
+@media (max-width:350px) {
+    .mini-loca{
+        left: 40%;
+        top: 25%;
+    }
+    .search-maps{
+        display: none;
+    }
+}

@@ -1,0 +1,138 @@
+.third-content{
+    font-family: 'Poppins', sans-serif;
+    width: 85%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.how{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: italic;
+    color: #005C30;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.works{
+    color: #43A047;
+}
+.third-column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.third-1{
+    color: #626262;
+}
+.efficient{
+    font-size: 32px;
+    font-weight: 600;
+}
+.effit{
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: italic;
+    color: #43A047;
+}
+.effit-details{
+    width: 28rem;
+}
+.third-2{
+    background-color: #D9FFDA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22rem;
+    width: 22rem;
+    border-radius: 1.5rem;
+}
+
+@media (max-width:1000px) {
+    .how{
+        font-size: 2.5rem;
+    }
+    .efficient{
+        font-size: 25px;
+    }
+    .effit-details{
+        font-size: 14px;
+        width: 25rem;
+    }
+    .third-2{
+        height: 20rem;
+        width: 20rem;
+    }
+    .trash-img{
+        width: 17rem;
+    }
+}
+
+@media (max-width:900px) {
+    .third-content{
+        margin-top: 1rem;
+        width: 90%;
+    }
+    .how{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .efficient{
+        font-size: 20px;
+    }
+    .effit-details{
+        font-size: 12px;
+        width: 20rem;
+    }
+}
+@media (max-width:750px) {
+    .third-content{
+        margin-top: 0.5rem;
+    }
+    .how{
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+    .efficient{
+        font-size: 16px;
+    }
+    .effit-details{
+        font-size: 12px;
+    }
+    .third-2{
+        height: 15rem;
+        width: 15rem;
+    }
+    .trash-img{
+        width: 13rem;
+    }
+}
+@media (max-width:670px) {
+    .how{
+        font-size: 1rem;
+    }
+    .efficient{
+        font-size: 13px;
+    }
+    .effit-details{
+        font-size: 10px;
+        width: 15rem;
+    }
+    .third-2{
+        width: 10rem;
+        height: 10rem;
+    }
+    .trash-img{
+        width: 9rem;
+    }
+}
+
+@media (max-width:475px) {
+    .third-1{
+        width: 100%;
+    }
+    .effit-details{
+        width: 100%;
+    }
+    .third-2{
+        display: none;
+    }
+}

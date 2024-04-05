@@ -1,0 +1,357 @@
+.wrapper{
+    background-color: #F1FFE5;
+    width: 98%;
+    margin:1% 0 0 auto ;
+}
+.header{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.title{
+    color: #2E845B;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+.headers{
+    display: flex;
+    column-gap: 2rem;
+}
+.headers a{
+    color: #43A047;
+    font-weight: 400;
+    text-decoration: none;
+}
+/* .fa-bars{
+    display: none;
+} */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+.wrapper-1{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+.wrap-details{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #49CD88;
+    text-align: center;
+}
+.Partner{
+    color: #43A047;
+}
+.buttons{
+    display: flex;
+    column-gap: 2rem;
+    margin-bottom: 1rem;
+}
+.download-btn{
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    background-color: #0C513F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    height: 3.5rem;
+    width: 15rem;
+}
+.wrapper-2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.round-1{
+    width: 45rem;
+}
+.round-2{
+    width: 35rem;
+    top: 11%;
+    position: absolute;
+}
+.search-map{
+    width: 13rem;
+    position: absolute;
+    top: 26%;
+    left: 32%;
+}
+.home{
+    position: absolute;
+    width: 15rem;
+    top: 20%;
+    left: 40%;
+    z-index: 1;
+}
+.no-result{
+    position: absolute;
+    left: 55%;
+    width: 13rem;
+    top: 26%;
+}
+
+@media (max-width:768px) {
+    .title{
+        font-size: 1.5rem;
+    }
+    .headers{
+        font-size: 14px;
+        column-gap: 1rem;
+    }
+    .wrapper-1{
+        margin-top: 1rem;
+    }
+    .wrap-details{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .buttons{
+        column-gap: 1rem;
+    }
+    .download-btn{
+        border-radius: 0.5rem;
+        font-size: 14px;
+        height: 2.5rem;
+        width: 13rem; 
+    }
+}
+
+@media (max-width:550px) {
+    .header{
+        padding: 0 1rem;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .headers{
+        font-size: 10px;
+        gap: 8px;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background-color: white;
+        z-index: 100;
+        width: 40%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.5s;
+        padding-top: 10px;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .headers.active{
+        left: 0;
+    }
+    .wrapper-1{
+        margin-top: 0.5rem;
+        row-gap: 0.5rem;
+    }
+    .wrap-details{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .buttons{
+        column-gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .download-btn{
+        height: 1.8rem;
+        width: 8rem;
+        border-radius: 8px;
+        font-size: 10px;
+    }
+    .download-btn img{
+        display: none;
+    }
+}
+@media (max-width:425px) {
+    .title{
+        font-size: 14px;
+    }
+    .headers{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .wrap-details{
+        font-size: 16px;
+        line-height: 1.1rem;
+    }
+    .buttons{
+        row-gap: 10px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1000px) {
+    .round-1{
+        width: 40rem;
+    }
+    .round-2{
+        width: 30rem;
+        top: 13%;
+    }
+    .search-map{
+        width: 11rem;
+        position: absolute;
+        top: 26%;
+        left: 32%;
+    }
+    .home{
+        position: absolute;
+        width: 12rem;
+        top: 20%;
+        left: 40%;
+        z-index: 1;
+    }
+    .no-result{
+        position: absolute;
+        left: 55%;
+        width: 11rem;
+        top: 26%;
+    }
+}
+@media (max-width:750px) {
+    .round-1{
+        width: 35rem;
+    }
+    .round-2{
+        width: 25rem;
+        top: 14%;
+    }
+    .search-map{
+        width: 10rem;
+        position: absolute;
+        top: 28%;
+        left: 25%;
+    }
+    .home{
+        position: absolute;
+        width: 11rem;
+        top: 23%;
+        left: 37%;
+        z-index: 1;
+    }
+    .no-result{
+        position: absolute;
+        left: 53%;
+        width: 10rem;
+        top: 28%;
+    }
+}
+@media (max-width:650px) {
+    .round-1{
+        width: 25rem;
+    }
+    .round-2{
+        width: 18rem;
+        top: 14%;
+    }
+    .search-map{
+        width: 7rem;
+        position: absolute;
+        top: 28%;
+        left: 26%;
+    }
+    .home{
+        position: absolute;
+        width: 9rem;
+        top: 23%;
+        left: 37%;
+        z-index: 1;
+    }
+    .no-result{
+        position: absolute;
+        left: 53%;
+        width: 7rem;
+        top: 28%;
+    }
+}
+@media (max-width:500px) {
+    .round-1{
+        width: 15rem;
+    }
+    .round-2{
+        width: 10rem;
+        top: 16%;
+    }
+    .search-map{
+        width: 4rem;
+        position: absolute;
+        top: 28%;
+        left: 32%;
+    }
+    .home{
+        position: absolute;
+        width: 6rem;
+        top: 23%;
+        left: 37%;
+        z-index: 1;
+    }
+    .no-result{
+        position: absolute;
+        left: 51%;
+        width: 4rem;
+        top: 27%;
+    }
+}
+@media (max-width:350px) {
+    .round-1{
+        width: 10rem;
+    }
+    .round-2{
+        width: 7rem;
+        top: 15%;
+    }
+    .search-map{
+        width: 2rem;
+        position: absolute;
+        top: 32%;
+        left: 33%;
+    }
+    .home{
+        position: absolute;
+        width: 4rem;
+        top: 24.5%;
+        left: 40%;
+        z-index: 1;
+    }
+    .no-result{
+        position: absolute;
+        left: 55%;
+        width: 2rem;
+        top: 32%;
+    }
+}
